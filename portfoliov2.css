@@ -141,7 +141,9 @@ ul{
     height: 600px;
     margin: 20px;
     box-sizing: border-box;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .box2{
@@ -185,7 +187,29 @@ ul{
 
 
 
+#about-section {
+    width: 100vw; /* full viewport width */
+    position: relative;
+    background: url("jackson-sophat-_t-l5FFH8VA-unsplash.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* optional for parallax */
+    padding: 60px 20px;
+    color: white;
+    box-sizing: border-box;
+  }
 
+  #about-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    z-index: 0;
+  }
+  
+  #about-section > * {
+    position: relative;
+    z-index: 1;
+  }
 
 
 
@@ -409,3 +433,38 @@ footer {
 .copyright-text{
     color:rgba(245, 245, 245, 0.637);
 }
+
+.profile-pic {
+    width: 300px; /* 180px × 1.5 = 270px */
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px); /* raises the image */
+  }
+
+  .download-cv-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff; /* or any modern blue */
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+  }
+  
+  .download-cv-btn:hover {
+    background-color: #0056b3;
+    color: white; /* <- Make sure the text stays visible */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 123, 255, 0.4);
+  }
+  
+  .download-cv-btn i {
+    margin-right: 8px;
+  }
