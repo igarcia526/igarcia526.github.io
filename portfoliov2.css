@@ -1,6 +1,4 @@
-body{
-    margin: 0%;
-}
+
 
 html{
     scroll-behavior: smooth;
@@ -422,7 +420,8 @@ i.fab:hover{
 footer {
       background-color: black;
       padding: 45px 0;
-      margin-top: 60px;
+      margin-top: 15;
+      padding-top: 30px; /* reduce if needed */
       opacity: 0.9;
 
   }
@@ -467,4 +466,139 @@ footer {
   
   .download-cv-btn i {
     margin-right: 8px;
+  }
+  
+
+  .timeline-section {
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    padding: 60px 20px 20px 20px; /* top, right, bottom, left */
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    min-height: calc(80vh - 230px); /* adjust based on your layout */
+  }
+  
+  .timeline-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .timeline-header button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .timeline-header .active-tab {
+    background-color: white;
+    color: #333;
+  }
+  
+  .timeline-header .inactive-tab {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 3px;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .timeline-date {
+    width: 45%;
+    text-align: right;
+    padding-right: 40px;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+  
+  .timeline-content {
+    width: 45%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+  }
+  
+  .timeline-content h4 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .timeline-content p {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  /* Timeline dots */
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    top: 4px;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1; /* This makes the main content stretch to fill available space */
+  }
+
+  .timeline-header button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .active-tab {
+    background-color: white;
+    color: #333;
+  }
+  
+  .inactive-tab {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
   }
