@@ -882,3 +882,13 @@ footer {
       align-items: center;
     }
   }
+
+  .lnr {
+    color: #007bff; /* Replace with your desired color */
+    font-size: 20px; /* Replace with your desired size */
+    vertical-align: middle; /* Optional: aligns with text nicely */
+  }
+
+  .lnr-download {
+    color: white;
+  }
