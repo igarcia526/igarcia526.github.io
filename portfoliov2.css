@@ -493,9 +493,9 @@ footer {
     cursor: pointer;
     margin: 0 10px;
     transition: background 0.3s ease;
-    flex: 1 1 auto;
+    flex: 0 0 auto;
   min-width: 120px;
-  max-width: 100%;
+  max-width: 200px;
   white-space: nowrap;
   }
   
@@ -590,16 +590,6 @@ footer {
     flex: 1; /* This makes the main content stretch to fill available space */
   }
 
-  .timeline-header button {
-    padding: 12px 20px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 0 10px;
-    transition: background 0.3s ease;
-  }
-  
   .active-tab {
     background-color: white;
     color: #333;
@@ -874,4 +864,21 @@ footer {
     }
   }
 
- 
+  @media (max-width: 480px) {
+    .timeline-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .timeline-header button {
+      width: 100%;
+      max-width: none;
+    }
+  
+    .timeline-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
