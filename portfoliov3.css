@@ -1,0 +1,66 @@
+/* Modern contact form styles */
+.modern-contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+  
+  .floating-label-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  
+  .floating-label-group input,
+  .floating-label-group textarea {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.85);
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    resize: none; /* disables the drag-to-resize */
+    min-height: 80px; /* keeps a decent height */
+    max-height: 180px; /* prevents it from stretching too tall */
+  }
+  
+  .floating-label-group input:focus,
+  .floating-label-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.15);
+  }
+  
+  .floating-label-group label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    color: #666;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.2s ease;
+  }
+  
+  .floating-label-group input:focus + label,
+  .floating-label-group textarea:focus + label,
+  .floating-label-group input:not(:placeholder-shown) + label,
+  .floating-label-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 4px;
+    font-size: 0.8rem;
+    color: #007bff;
+  }
+  
+  .contact-card textarea {
+    resize: none;
+    max-height: 180px;
+  }
+  
+  .contact-form button {
+    width: 100%; /* Make the button fill container width */
+    margin-top: 10px;
+  }
