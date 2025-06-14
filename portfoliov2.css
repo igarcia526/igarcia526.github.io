@@ -687,3 +687,143 @@ footer {
     opacity: 0;
     pointer-events: none;
   }
+
+  @media (max-width: 992px) { /* Medium devices (tablets, 992px down) */
+    .frosted-card {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .frosted-card .box1,
+    .frosted-card .box2 {
+      flex: 1 1 100%;
+      width: 100%;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+  
+    #top-name, #top-contact {
+      font-size: 20px;
+    }
+  
+    #top-contact {
+      top: 15px;
+      right: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) { /* Mobile phones */
+    #main-navbar .navbar-brand,
+    #main-navbar .nav-link {
+      font-size: 18px !important;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .timeline-date,
+    .timeline-content {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .timeline-date {
+      padding-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 18px !important;
+      white-space: nowrap;
+    }
+  
+    .navbar-toggler {
+      padding: 0.25rem 0.5rem;
+    }
+  
+    #main-navbar .nav-link {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .timeline::before {
+      left: 20px;
+      transform: none;
+    }
+  
+    .timeline-item {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 40px;
+    }
+  
+    .timeline-date,
+    .timeline-content {
+      width: 100%;
+      text-align: left;
+      padding: 10px 0;
+    }
+  
+    .timeline-date {
+      padding-right: 0;
+      font-size: 14px;
+    }
+  
+    .timeline-content {
+      font-size: 14px;
+    }
+  
+    .timeline-item::before {
+      left: 12px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .frosted-card {
+      padding: 20px;
+      border-radius: 16px;
+    }
+  
+    .download-cv-btn {
+      width: 100%;
+      text-align: center;
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+  }
+  @media (max-width: 576px) {
+    #top-name {
+      top: 12px;
+      left: 12px;
+      font-size: 18px;
+    }
+  
+    #top-contact {
+      top: 12px;
+      right: 12px;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .section-divider {
+      display: none;
+    }
+  }
