@@ -189,7 +189,8 @@ ul{
 
 
 #about-section {
-    width: 60vw; /* full viewport width */
+    width: 100%;
+    max-width: 1500px;
     margin: 0 auto;
     position: relative;
     background-attachment: fixed; /* optional for parallax */
@@ -603,6 +604,8 @@ footer {
     display: flex;
     flex-direction: row; /* <--- important! */
     flex-wrap: wrap;
+    min-width: 0;
+    overflow: hidden;
     gap: 30px;
     padding: 30px;
     border-radius: 20px;
@@ -628,10 +631,12 @@ footer {
   
   .frosted-card .box1 {
     flex: 0 0 300px;
+    min-width: 0;
   }
   
   .frosted-card .box2 {
     flex: 1;
+    min-width: 0;
   }
 
   #main-navbar {
@@ -690,15 +695,21 @@ footer {
       flex-direction: column;
       align-items: center;
       padding: 20px 15px !important;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: hidden;
     }
   
     .frosted-card .box1,
     .frosted-card .box2 {
-        padding: 0 !important;
-        margin: 0 !important;
+      word-wrap: break-word;
+  overflow-wrap: break-word;
+      padding: 0 !important;
+      margin: 0 !important;
       flex: 1 1 100%;
       width: 100%;
       text-align: center;
+      min-width: 0; /* 👈 this allows it to shrink within constraints */
     }
   
     .profile-pic {
