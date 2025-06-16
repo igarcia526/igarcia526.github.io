@@ -791,6 +791,11 @@ footer {
     .timeline-item::before {
       left: 12px;
     }
+
+    #about-section {
+      width: 95vw; /* almost full width on mobile */
+      padding: 30px 10px; /* optional: reduce padding */
+    }
   }
 
   @media (max-width: 576px) {
@@ -810,7 +815,6 @@ footer {
       .frosted-card {
         width: 100% !important;
         margin: 0 !important;
-        border-radius: 0 !important;
         background: white !important;
         box-shadow: none !important;
         border: none !important;
