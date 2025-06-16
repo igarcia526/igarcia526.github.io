@@ -688,7 +688,6 @@ footer {
 
   @media (max-width: 992px) { /* Medium devices (tablets, 992px down) */
     .frosted-card {
-     margin-top: 280px !important; /* 👈 increase this to control spacing */
       flex-direction: column;
       align-items: center;
       padding: 20px 15px !important;
