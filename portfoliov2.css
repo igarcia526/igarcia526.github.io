@@ -126,7 +126,6 @@ ul{
 
 
 .container{
-    width:100%;
     height: auto;
     background-color: none;
     margin-top: 20px;
@@ -190,7 +189,8 @@ ul{
 
 
 #about-section {
-    width: 100vw; /* full viewport width */
+    width: 60vw; /* full viewport width */
+    margin: 0 auto;
     position: relative;
     background-attachment: fixed; /* optional for parallax */
     padding: 60px 20px;
