@@ -812,7 +812,18 @@ footer {
         width: 100%;
         overflow-x: hidden;
       }
+
+      #about-section{
+        background: whitesmoke;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100vw; /* full width of viewport */
+        max-width: 100% !important;
+        box-sizing: border-box;
+        padding-bottom: 14px !important;
+      }
       .container {
+        
         padding: 0 !important;
         margin: 0 auto !important;
         width: 100% !important;
@@ -820,20 +831,22 @@ footer {
       }
   
       .frosted-card {
-        width: 100% !important;
-        margin: 0 !important;
-        background: white !important;
+        background: none !important;
         box-shadow: none !important;
         border: none !important;
-        padding: 20px 15px !important;
+        padding: 0 !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    width: 100% !important;
+    margin: 0 !important;
       }
     
       .frosted-card .box1,
       .frosted-card .box2 {
-        padding: 0 !important;
-        margin: 0 !important;
+        padding: 0 16px !important;
+    margin: 0 auto;
+    text-align: center;
         width: 100% !important;
-        text-align: center;
       }
   
     .download-cv-btn {
